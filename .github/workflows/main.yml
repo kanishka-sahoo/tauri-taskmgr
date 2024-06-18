@@ -56,16 +56,6 @@ jobs:
           releaseDraft: true
           prerelease: false
           args: ${{ matrix.args }}
-      - name: Upload Release Assets (Linux/deb)
-        if: matrix.platform == 'ubuntu-22.04'
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.tauri.outputs.upload_url }}
-          asset_path: src-tauri/target/release/bundle/deb/*.deb 
-          asset_name: taskmgr-tauri_amd64.deb
-          asset_content_type: application/vnd.debian.binary-package
   publish-release:
     permissions:
       contents: write
