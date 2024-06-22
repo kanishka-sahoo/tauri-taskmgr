@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faBars, faTimes, IconDefinition, faGear } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faTimes, IconDefinition, faGear } from '@fortawesome/free-solid-svg-icons';
 import "./LeftSidebar.css";
 import SidebarOptions from "./SidebarOptions";
 

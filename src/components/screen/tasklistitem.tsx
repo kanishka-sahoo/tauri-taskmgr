@@ -39,10 +39,6 @@ const TaskListItem: React.FC<TaskListItemProps> = ({ task, onUpdate, onDelete })
     setEditedTask(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setEditedTask(prev => ({ ...prev, isCompleted: e.target.checked }));
-  };
-
   const handleTagInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setTagInput(e.target.value);
   };

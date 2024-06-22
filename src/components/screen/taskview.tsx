@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import AddNewButton from './addnewicon';
 import TaskListItem from './tasklistitem';
 import { X, PlusCircle } from 'lucide-react';
