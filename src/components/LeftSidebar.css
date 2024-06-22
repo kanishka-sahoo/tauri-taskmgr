@@ -1,0 +1,7 @@
+.sidebar {
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+  max-width: 16rem;
+  width: 64px;
+  min-width: 64px;
+}
